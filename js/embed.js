@@ -1,5 +1,11 @@
-function reloadEmbed(info){
-    //alert(info.elements.namedItem("channel").value);
-    var newUrl = "https://player.twitch.tv/?channel="+info.elements.namedItem("channel").value;
-    document.getElementsByTagName("iframe")[0].setAttribute("src", newUrl);
+$('#input-field').on("keypress", function (e) {            
+    if (e.keyCode == 13) {
+        e.preventDefault(); 
+        reloadEmbed();
+    }
+});
+
+function reloadEmbed(){
+    var newVal = $("#input-field").val();
+    player.setChannel(newVal);
 }
