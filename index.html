@@ -5,23 +5,16 @@
         
 <link rel="stylesheet" href="css/topcoat-desktop-dark.min.css"/>
 <link  id="hostStyle" rel="stylesheet" href="css/styles.css"/>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:500" rel="stylesheet">
 <script src="js/libs/jquery-2.0.2.min.js"></script>
 <title></title>
 </head>
 
 <body class="hostElt">
+    
     <div id="content">
-        <div id="input" action='javascript:document.getElementsById("embed").src;' target="my-iframe" method="post">
-            <div id="input-bar"><img id="logo" src="icons/glitch.svg"></div>
-            <div id="user-input">
-                <input type="text" name="channel" id="input-field" placeholder="Enter a Channel Name">
-            </div>
-        </div>
         <div class="container" id="embed-container">
             <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
-            <div id="<player div ID>"></div>
+            <div id="embed-player"></div>
             <script type="text/javascript">
                 var options = {
                     width: 540,
@@ -32,6 +25,12 @@
                 player.setVolume(0.5);
             </script>
         </div>
+    </div>
+    <div id="input" action='javascript:document.getElementsById("embed").src;' target="my-iframe" method="post">
+            <div id="input-bar"><img id="logo" src="icons/glitch.svg"></div>
+            <div id="user-input">
+                <input type="text" name="channel" id="input-field" placeholder="Enter a Channel Name">
+            </div>
     </div>
     <script src="js/libs/CSInterface.js"></script>
     <script src="js/themeManager.js"></script>
