@@ -1,4 +1,4 @@
-# ae-twitch
+# Twitch Panel for After Effects and Photoshop
 
 ### What is it?
 A simple dockable panel with a Twitch embed player. Currently not resizable in Photoshop due to an Adobe bug. 
